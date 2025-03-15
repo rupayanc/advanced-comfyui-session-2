@@ -44,6 +44,14 @@ workflows:
     inputs: []
     outputs: []
     skip_preprocess: true
+  - id: h9wg0bvos6
+    name: architecture_visualsation_api.json
+    file: architecture/architecture_visualsation_api.json
+    version: 0
+    description: ''
+    inputs: []
+    outputs: []
+    skip_preprocess: true
 normal_workflows:
   - id: 58ou2hj6ul3
     name: vton.json
@@ -65,3 +73,7 @@ normal_workflows:
     name: ai_influencer.json
     file: ai_influencer/ai_influencer.json
     version: 3
+  - id: sd90h8jna2d
+    name: architecture_visualsation.json
+    file: architecture/architecture_visualsation.json
+    version: 0
