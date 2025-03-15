@@ -1,6 +1,6 @@
 {
     "last_node_id": 65,
-    "last_link_id": 147,
+    "last_link_id": 148,
     "nodes": [
         {
             "id": 1,
@@ -14,7 +14,7 @@
                 100
             ],
             "flags": {},
-            "order": 1,
+            "order": 0,
             "mode": 0,
             "inputs": [],
             "outputs": [
@@ -64,7 +64,7 @@
                 58
             ],
             "flags": {},
-            "order": 0,
+            "order": 1,
             "mode": 0,
             "inputs": [],
             "outputs": [
@@ -99,7 +99,7 @@
                 320
             ],
             "flags": {},
-            "order": 3,
+            "order": 2,
             "mode": 0,
             "inputs": [],
             "outputs": [
@@ -109,8 +109,7 @@
                     "shape": 3,
                     "links": [
                         77,
-                        125,
-                        147
+                        125
                     ],
                     "slot_index": 0
                 },
@@ -229,7 +228,7 @@
                 110
             ],
             "flags": {},
-            "order": 2,
+            "order": 3,
             "mode": 0,
             "inputs": [],
             "outputs": [
@@ -281,7 +280,8 @@
                     "type": "IMAGE",
                     "shape": 3,
                     "links": [
-                        135
+                        135,
+                        148
                     ],
                     "slot_index": 0
                 }
@@ -569,7 +569,7 @@
                 {
                     "name": "image",
                     "type": "IMAGE",
-                    "link": 147
+                    "link": 148
                 },
                 {
                     "name": "attn_mask",
@@ -903,8 +903,8 @@
             "MODEL"
         ],
         [
-            147,
-            6,
+            148,
+            20,
             0,
             60,
             2,
@@ -968,10 +968,10 @@
     "config": {},
     "extra": {
         "ds": {
-            "scale": 0.5131581182307069,
+            "scale": 0.5644739300537774,
             "offset": [
-                554.5311657573241,
-                -30.89170439038628
+                921.1979060587764,
+                -106.85157321980097
             ]
         }
     },
