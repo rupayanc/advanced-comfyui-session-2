@@ -1,7 +1,7 @@
 {
     "3": {
         "inputs": {
-            "seed": 699308268158088,
+            "seed": 574501100813099,
             "steps": 20,
             "cfg": 8,
             "sampler_name": "euler",
@@ -123,7 +123,7 @@
     },
     "12": {
         "inputs": {
-            "preset": "PLUS (high strength)",
+            "preset": "VIT-G (medium strength)",
             "model": [
                 "4",
                 0
@@ -198,7 +198,7 @@
     },
     "18": {
         "inputs": {
-            "strength": 1,
+            "strength": 0.7000000000000001,
             "start_percent": 0,
             "end_percent": 1,
             "positive": [
@@ -301,7 +301,7 @@
     "25": {
         "inputs": {
             "upscale_by": 2,
-            "seed": 200696790128786,
+            "seed": 856235761704424,
             "steps": 20,
             "cfg": 8,
             "sampler_name": "euler",
