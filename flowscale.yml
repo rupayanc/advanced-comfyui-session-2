@@ -23,7 +23,7 @@ workflows:
   - id: 013ihoefwflkk
     name: floor_plan_visualization_api.json
     file: architecture/floor_plan_visualization_api.json
-    version: 2
+    version: 3
     description: ''
     inputs: []
     outputs: []
@@ -40,4 +40,4 @@ normal_workflows:
   - id: 2mxj3vb82aw
     name: floor_plan_visualization.json
     file: architecture/floor_plan_visualization.json
-    version: 2
+    version: 3
