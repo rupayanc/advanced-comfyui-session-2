@@ -54,7 +54,7 @@
                 "Node name for S&R": "KSampler"
             },
             "widgets_values": [
-                619574020973782,
+                699308268158088,
                 "randomize",
                 20,
                 8,
@@ -75,7 +75,7 @@
                 98
             ],
             "flags": {},
-            "order": 2,
+            "order": 5,
             "mode": 0,
             "inputs": [],
             "outputs": [
@@ -127,7 +127,7 @@
                 106
             ],
             "flags": {},
-            "order": 14,
+            "order": 13,
             "mode": 0,
             "inputs": [
                 {
@@ -180,7 +180,7 @@
                 164.31304931640625
             ],
             "flags": {},
-            "order": 7,
+            "order": 10,
             "mode": 0,
             "inputs": [
                 {
@@ -220,7 +220,7 @@
                 180.6060791015625
             ],
             "flags": {},
-            "order": 8,
+            "order": 11,
             "mode": 0,
             "inputs": [
                 {
@@ -304,7 +304,7 @@
                 190
             ],
             "flags": {},
-            "order": 13,
+            "order": 16,
             "mode": 0,
             "inputs": [
                 {
@@ -365,7 +365,7 @@
                 78.00625610351562
             ],
             "flags": {},
-            "order": 6,
+            "order": 9,
             "mode": 0,
             "inputs": [
                 {
@@ -420,7 +420,7 @@
                 314
             ],
             "flags": {},
-            "order": 4,
+            "order": 0,
             "mode": 0,
             "inputs": [],
             "outputs": [
@@ -462,7 +462,7 @@
                 66
             ],
             "flags": {},
-            "order": 10,
+            "order": 6,
             "mode": 0,
             "inputs": [
                 {
@@ -514,7 +514,7 @@
                 186
             ],
             "flags": {},
-            "order": 15,
+            "order": 17,
             "mode": 0,
             "inputs": [
                 {
@@ -585,7 +585,7 @@
                 26
             ],
             "flags": {},
-            "order": 9,
+            "order": 12,
             "mode": 0,
             "inputs": [
                 {
@@ -623,7 +623,7 @@
                 58
             ],
             "flags": {},
-            "order": 0,
+            "order": 1,
             "mode": 0,
             "inputs": [],
             "outputs": [
@@ -729,7 +729,7 @@
                 58
             ],
             "flags": {},
-            "order": 1,
+            "order": 2,
             "mode": 0,
             "inputs": [],
             "outputs": [
@@ -762,7 +762,7 @@
                 82
             ],
             "flags": {},
-            "order": 11,
+            "order": 7,
             "mode": 0,
             "inputs": [
                 {
@@ -805,7 +805,7 @@
                 82
             ],
             "flags": {},
-            "order": 12,
+            "order": 8,
             "mode": 0,
             "inputs": [
                 {
@@ -848,7 +848,7 @@
                 303.59716796875
             ],
             "flags": {},
-            "order": 17,
+            "order": 15,
             "mode": 0,
             "inputs": [
                 {
@@ -877,7 +877,7 @@
                 328.7448425292969
             ],
             "flags": {},
-            "order": 16,
+            "order": 14,
             "mode": 0,
             "inputs": [
                 {
@@ -996,7 +996,7 @@
             },
             "widgets_values": [
                 2,
-                87610009279612,
+                200696790128786,
                 "randomize",
                 20,
                 8,
@@ -1029,7 +1029,7 @@
                 58.009666442871094
             ],
             "flags": {},
-            "order": 5,
+            "order": 4,
             "mode": 0,
             "inputs": [],
             "outputs": [
@@ -1184,7 +1184,8 @@
                 "cnr_id": "comfy-core",
                 "ver": "0.3.15",
                 "Node name for S&R": "PreviewImage"
-            }
+            },
+            "widgets_values": []
         },
         {
             "id": 31,
@@ -1617,10 +1618,10 @@
     "config": {},
     "extra": {
         "ds": {
-            "scale": 0.3186308177103567,
+            "scale": 0.26333125430607984,
             "offset": [
-                152.81573728372547,
-                401.63392535320304
+                1620.2560824888774,
+                970.659809595292
             ]
         }
     },
