@@ -1,7 +1,7 @@
 {
     "3": {
         "inputs": {
-            "seed": 156680208700286,
+            "seed": 198126302865885,
             "steps": 20,
             "cfg": 8,
             "sampler_name": "euler",
@@ -57,7 +57,7 @@
     },
     "6": {
         "inputs": {
-            "text": "beautiful scenery nature glass bottle landscape, , purple galaxy bottle,",
+            "text": "a minimalist living room",
             "clip": [
                 "4",
                 1
@@ -112,7 +112,7 @@
     },
     "10": {
         "inputs": {
-            "image": "example.png",
+            "image": "50f668bd66cb86c9f8d52e21aee2c353_2.jpg",
             "upload": "image"
         },
         "class_type": "LoadImage",
@@ -134,7 +134,7 @@
     },
     "12": {
         "inputs": {
-            "weight": 1,
+            "weight": 0.4,
             "start_at": 0,
             "end_at": 1,
             "weight_type": "style transfer",
@@ -171,7 +171,7 @@
     },
     "14": {
         "inputs": {
-            "image": "example.png",
+            "image": "filename_prefix_81175_GN29IK1K7U.png",
             "upload": "image"
         },
         "class_type": "LoadImage",
@@ -213,7 +213,11 @@
     "16": {
         "inputs": {
             "coarse": "disable",
-            "resolution": 1024
+            "resolution": 1024,
+            "image": [
+                "10",
+                0
+            ]
         },
         "class_type": "LineArtPreprocessor",
         "_meta": {
@@ -254,7 +258,11 @@
     "18": {
         "inputs": {
             "ckpt_name": "depth_anything_vitl14.pth",
-            "resolution": 1024
+            "resolution": 1024,
+            "image": [
+                "10",
+                0
+            ]
         },
         "class_type": "DepthAnythingPreprocessor",
         "_meta": {
@@ -306,7 +314,7 @@
     "28": {
         "inputs": {
             "upscale_by": 2,
-            "seed": 0,
+            "seed": 982568543829115,
             "steps": 20,
             "cfg": 8,
             "sampler_name": "euler",
