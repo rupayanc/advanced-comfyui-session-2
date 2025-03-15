@@ -54,7 +54,7 @@
                 "Node name for S&R": "KSampler"
             },
             "widgets_values": [
-                1082229674441929,
+                319459578321395,
                 "randomize",
                 20,
                 8,
@@ -190,7 +190,7 @@
                 "Node name for S&R": "CLIPTextEncode"
             },
             "widgets_values": [
-                "beautiful scenery nature glass bottle landscape, , purple galaxy bottle,"
+                "a man dancing on a street"
             ]
         },
         {
@@ -282,12 +282,12 @@
             "id": 9,
             "type": "SaveImage",
             "pos": [
-                1940.856689453125,
-                299.9487609863281
+                1926.5526123046875,
+                260.3469543457031
             ],
             "size": [
                 210,
-                58
+                270
             ],
             "flags": {},
             "order": 9,
@@ -370,8 +370,8 @@
                 "Node name for S&R": "UltimateSDUpscale"
             },
             "widgets_values": [
-                2,
-                391903220613834,
+                4,
+                1046038136567559,
                 "randomize",
                 20,
                 8,
@@ -434,7 +434,7 @@
             ],
             "size": [
                 210,
-                26
+                246
             ],
             "flags": {},
             "order": 8,
@@ -589,10 +589,10 @@
     "config": {},
     "extra": {
         "ds": {
-            "scale": 1.1,
+            "scale": 0.7513148009015777,
             "offset": [
-                148.9227398252653,
-                -293.16272834871717
+                7.277289850188284,
+                -28.8472178921312
             ]
         }
     },
