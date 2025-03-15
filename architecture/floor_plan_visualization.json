@@ -427,9 +427,10 @@
                 }
             ],
             "properties": {
-                "aux_id": "Fannovel16/comfyui_controlnet_aux",
+                "cnr_id": "comfyui_controlnet_aux",
                 "ver": "83463c2e4b04e729268e57f638b4212e0da4badc",
-                "Node name for S&R": "DepthAnythingPreprocessor"
+                "Node name for S&R": "DepthAnythingPreprocessor",
+                "aux_id": "Fannovel16/comfyui_controlnet_aux"
             },
             "widgets_values": [
                 "depth_anything_vitl14.pth",
@@ -462,7 +463,8 @@
                 "cnr_id": "comfy-core",
                 "ver": "0.3.15",
                 "Node name for S&R": "PreviewImage"
-            }
+            },
+            "widgets_values": []
         },
         {
             "id": 20,
@@ -497,9 +499,10 @@
                 }
             ],
             "properties": {
-                "aux_id": "Fannovel16/comfyui_controlnet_aux",
+                "cnr_id": "comfyui_controlnet_aux",
                 "ver": "83463c2e4b04e729268e57f638b4212e0da4badc",
-                "Node name for S&R": "LineArtPreprocessor"
+                "Node name for S&R": "LineArtPreprocessor",
+                "aux_id": "Fannovel16/comfyui_controlnet_aux"
             },
             "widgets_values": [
                 "disable",
@@ -532,7 +535,8 @@
                 "cnr_id": "comfy-core",
                 "ver": "0.3.15",
                 "Node name for S&R": "PreviewImage"
-            }
+            },
+            "widgets_values": []
         },
         {
             "id": 18,
@@ -948,7 +952,7 @@
                 "aux_id": "cubiq/ComfyUI_IPAdapter_plus"
             },
             "widgets_values": [
-                1,
+                0.4,
                 0,
                 1,
                 "style transfer"
@@ -1262,10 +1266,10 @@
     "config": {},
     "extra": {
         "ds": {
-            "scale": 0.5131581182307069,
+            "scale": 1.2100000000000002,
             "offset": [
-                513.0215029979331,
-                -119.69902620529568
+                19.222342634296922,
+                -862.6423083887664
             ]
         }
     },
