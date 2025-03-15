@@ -39,7 +39,7 @@ workflows:
   - id: znuf43dcjwi
     name: ai_influencer_api.json
     file: ai_influencer/ai_influencer_api.json
-    version: 2
+    version: 3
     description: ''
     inputs: []
     outputs: []
@@ -64,4 +64,4 @@ normal_workflows:
   - id: dl00hibiwr
     name: ai_influencer.json
     file: ai_influencer/ai_influencer.json
-    version: 2
+    version: 3
