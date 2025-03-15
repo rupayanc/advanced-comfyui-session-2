@@ -54,7 +54,7 @@
                 "Node name for S&R": "KSampler"
             },
             "widgets_values": [
-                296635319547170,
+                775912205896618,
                 "randomize",
                 20,
                 8,
@@ -105,46 +105,6 @@
                 "Node name for S&R": "VAEDecode"
             },
             "widgets_values": []
-        },
-        {
-            "id": 6,
-            "type": "CLIPTextEncode",
-            "pos": [
-                415,
-                186
-            ],
-            "size": [
-                422.84503173828125,
-                164.31304931640625
-            ],
-            "flags": {},
-            "order": 6,
-            "mode": 0,
-            "inputs": [
-                {
-                    "name": "clip",
-                    "type": "CLIP",
-                    "link": 3
-                }
-            ],
-            "outputs": [
-                {
-                    "name": "CONDITIONING",
-                    "type": "CONDITIONING",
-                    "links": [
-                        18
-                    ],
-                    "slot_index": 0
-                }
-            ],
-            "properties": {
-                "cnr_id": "comfy-core",
-                "ver": "0.3.15",
-                "Node name for S&R": "CLIPTextEncode"
-            },
-            "widgets_values": [
-                "beautiful scenery nature glass bottle landscape, , purple galaxy bottle,"
-            ]
         },
         {
             "id": 7,
@@ -446,7 +406,7 @@
             ],
             "size": [
                 210,
-                26
+                246
             ],
             "flags": {},
             "order": 16,
@@ -518,7 +478,7 @@
             ],
             "size": [
                 210,
-                26
+                246
             ],
             "flags": {},
             "order": 15,
@@ -805,45 +765,6 @@
             ]
         },
         {
-            "id": 24,
-            "type": "LoadImage",
-            "pos": [
-                -205.88037109375,
-                1218.4310302734375
-            ],
-            "size": [
-                315,
-                314
-            ],
-            "flags": {},
-            "order": 4,
-            "mode": 0,
-            "inputs": [],
-            "outputs": [
-                {
-                    "name": "IMAGE",
-                    "type": "IMAGE",
-                    "links": [
-                        36
-                    ]
-                },
-                {
-                    "name": "MASK",
-                    "type": "MASK",
-                    "links": null
-                }
-            ],
-            "properties": {
-                "cnr_id": "comfy-core",
-                "ver": "0.3.15",
-                "Node name for S&R": "LoadImage"
-            },
-            "widgets_values": [
-                "magggumpi_A_large_weathered_stone_arch_frames_the_entrance_to_a_bedbc2ad-db14-4540-b248-03f1322084a2.png",
-                "image"
-            ]
-        },
-        {
             "id": 12,
             "type": "IPAdapterUnifiedLoader",
             "pos": [
@@ -956,6 +877,85 @@
                 0,
                 1,
                 "style transfer"
+            ]
+        },
+        {
+            "id": 24,
+            "type": "LoadImage",
+            "pos": [
+                -205.88037109375,
+                1218.4310302734375
+            ],
+            "size": [
+                315,
+                314
+            ],
+            "flags": {},
+            "order": 4,
+            "mode": 0,
+            "inputs": [],
+            "outputs": [
+                {
+                    "name": "IMAGE",
+                    "type": "IMAGE",
+                    "links": [
+                        36
+                    ]
+                },
+                {
+                    "name": "MASK",
+                    "type": "MASK",
+                    "links": null
+                }
+            ],
+            "properties": {
+                "cnr_id": "comfy-core",
+                "ver": "0.3.15",
+                "Node name for S&R": "LoadImage"
+            },
+            "widgets_values": [
+                "ComfyUI_00018_.png",
+                "image"
+            ]
+        },
+        {
+            "id": 6,
+            "type": "CLIPTextEncode",
+            "pos": [
+                415,
+                186
+            ],
+            "size": [
+                422.84503173828125,
+                164.31304931640625
+            ],
+            "flags": {},
+            "order": 6,
+            "mode": 0,
+            "inputs": [
+                {
+                    "name": "clip",
+                    "type": "CLIP",
+                    "link": 3
+                }
+            ],
+            "outputs": [
+                {
+                    "name": "CONDITIONING",
+                    "type": "CONDITIONING",
+                    "links": [
+                        18
+                    ],
+                    "slot_index": 0
+                }
+            ],
+            "properties": {
+                "cnr_id": "comfy-core",
+                "ver": "0.3.15",
+                "Node name for S&R": "CLIPTextEncode"
+            },
+            "widgets_values": [
+                "minimalist living room"
             ]
         }
     ],
@@ -1266,10 +1266,10 @@
     "config": {},
     "extra": {
         "ds": {
-            "scale": 1.2100000000000002,
+            "scale": 0.28966437973668785,
             "offset": [
-                19.222342634296922,
-                -862.6423083887664
+                771.830245431827,
+                1446.2210754992332
             ]
         }
     },
