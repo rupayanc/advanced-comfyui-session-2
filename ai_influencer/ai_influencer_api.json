@@ -19,7 +19,7 @@
     },
     "6": {
         "inputs": {
-            "image": "IMG_20210110_114118 (2).jpg",
+            "image": "IMG_20210110_114118.jpg",
             "upload": "image"
         },
         "class_type": "LoadImage",
@@ -81,6 +81,7 @@
     },
     "53": {
         "inputs": {
+            "seed": 936805976898740,
             "steps": 35,
             "cfg": 6,
             "sampler_name": "ddpm",
@@ -177,18 +178,6 @@
             "title": "Save Image"
         }
     },
-    "59": {
-        "inputs": {
-            "images": [
-                "6",
-                0
-            ]
-        },
-        "class_type": "PreviewImage",
-        "_meta": {
-            "title": "Preview Image"
-        }
-    },
     "60": {
         "inputs": {
             "weight": 1,
@@ -204,7 +193,7 @@
                 1
             ],
             "image": [
-                "6",
+                "20",
                 0
             ]
         },
@@ -215,7 +204,11 @@
     },
     "61": {
         "inputs": {
-            "preset": "FULL FACE - SD1.5 only (portraits stronger)"
+            "preset": "FULL FACE - SD1.5 only (portraits stronger)",
+            "model": [
+                "1",
+                0
+            ]
         },
         "class_type": "IPAdapterUnifiedLoader",
         "_meta": {
