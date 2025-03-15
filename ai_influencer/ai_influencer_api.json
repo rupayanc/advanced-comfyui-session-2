@@ -1,0 +1,237 @@
+{
+    "1": {
+        "inputs": {
+            "ckpt_name": "epicrealism_naturalSinRC1VAE.safetensors"
+        },
+        "class_type": "CheckpointLoaderSimple",
+        "_meta": {
+            "title": "Load Checkpoint"
+        }
+    },
+    "2": {
+        "inputs": {
+            "vae_name": "vae-ft-mse-840000-ema-pruned.safetensors"
+        },
+        "class_type": "VAELoader",
+        "_meta": {
+            "title": "Load VAE"
+        }
+    },
+    "6": {
+        "inputs": {
+            "image": "IMG_20210110_114118 (2).jpg",
+            "upload": "image"
+        },
+        "class_type": "LoadImage",
+        "_meta": {
+            "title": "Load Image"
+        }
+    },
+    "7": {
+        "inputs": {
+            "text": "closeup photo of a man wearing a white suit in a garden\n\nhighly detailed, diffuse light, professional photography, 4k, smiling",
+            "clip": [
+                "1",
+                1
+            ]
+        },
+        "class_type": "CLIPTextEncode",
+        "_meta": {
+            "title": "CLIP Text Encode (Prompt)"
+        }
+    },
+    "8": {
+        "inputs": {
+            "text": "blurry, horror, distorted, malformed, naked, hands, illustration",
+            "clip": [
+                "1",
+                1
+            ]
+        },
+        "class_type": "CLIPTextEncode",
+        "_meta": {
+            "title": "CLIP Text Encode (Prompt)"
+        }
+    },
+    "10": {
+        "inputs": {
+            "width": 512,
+            "height": 512,
+            "batch_size": 1
+        },
+        "class_type": "EmptyLatentImage",
+        "_meta": {
+            "title": "Empty Latent Image"
+        }
+    },
+    "20": {
+        "inputs": {
+            "interpolation": "LANCZOS",
+            "crop_position": "top",
+            "sharpening": 0.05,
+            "image": [
+                "6",
+                0
+            ]
+        },
+        "class_type": "PrepImageForClipVision",
+        "_meta": {
+            "title": "Prep Image For ClipVision"
+        }
+    },
+    "53": {
+        "inputs": {
+            "steps": 35,
+            "cfg": 6,
+            "sampler_name": "ddpm",
+            "scheduler": "exponential",
+            "denoise": 1,
+            "model": [
+                "60",
+                0
+            ],
+            "positive": [
+                "7",
+                0
+            ],
+            "negative": [
+                "8",
+                0
+            ],
+            "latent_image": [
+                "10",
+                0
+            ]
+        },
+        "class_type": "KSampler",
+        "_meta": {
+            "title": "KSampler"
+        }
+    },
+    "54": {
+        "inputs": {
+            "samples": [
+                "53",
+                0
+            ],
+            "vae": [
+                "2",
+                0
+            ]
+        },
+        "class_type": "VAEDecode",
+        "_meta": {
+            "title": "VAE Decode"
+        }
+    },
+    "55": {
+        "inputs": {
+            "filename_prefix": "FaceID_Plus",
+            "images": [
+                "54",
+                0
+            ]
+        },
+        "class_type": "SaveImage",
+        "_meta": {
+            "title": "Save Image"
+        }
+    },
+    "56": {
+        "inputs": {
+            "enabled": true,
+            "swap_model": "inswapper_128.onnx",
+            "facedetection": "retinaface_resnet50",
+            "face_restore_model": "GFPGANv1.4.pth",
+            "face_restore_visibility": 1,
+            "codeformer_weight": 0.5,
+            "detect_gender_input": "no",
+            "detect_gender_source": "no",
+            "input_faces_index": "0",
+            "source_faces_index": "0",
+            "console_log_level": 1,
+            "input_image": [
+                "54",
+                0
+            ],
+            "source_image": [
+                "6",
+                0
+            ]
+        },
+        "class_type": "ReActorFaceSwap",
+        "_meta": {
+            "title": "ReActor 🌌 Fast Face Swap"
+        }
+    },
+    "58": {
+        "inputs": {
+            "filename_prefix": "ComfyUI",
+            "images": [
+                "56",
+                0
+            ]
+        },
+        "class_type": "SaveImage",
+        "_meta": {
+            "title": "Save Image"
+        }
+    },
+    "59": {
+        "inputs": {
+            "images": [
+                "6",
+                0
+            ]
+        },
+        "class_type": "PreviewImage",
+        "_meta": {
+            "title": "Preview Image"
+        }
+    },
+    "60": {
+        "inputs": {
+            "weight": 1,
+            "start_at": 0,
+            "end_at": 1,
+            "weight_type": "standard",
+            "model": [
+                "1",
+                0
+            ],
+            "ipadapter": [
+                "61",
+                1
+            ],
+            "image": [
+                "6",
+                0
+            ]
+        },
+        "class_type": "IPAdapter",
+        "_meta": {
+            "title": "IPAdapter"
+        }
+    },
+    "61": {
+        "inputs": {
+            "preset": "FULL FACE - SD1.5 only (portraits stronger)"
+        },
+        "class_type": "IPAdapterUnifiedLoader",
+        "_meta": {
+            "title": "IPAdapter Unified Loader"
+        }
+    },
+    "62": {
+        "inputs": {
+            "images": [
+                "20",
+                0
+            ]
+        },
+        "class_type": "PreviewImage",
+        "_meta": {
+            "title": "Preview Image"
+        }
+    }
+}
