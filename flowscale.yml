@@ -36,6 +36,14 @@ workflows:
     inputs: []
     outputs: []
     skip_preprocess: true
+  - id: znuf43dcjwi
+    name: ai_influencer_api.json
+    file: ai_influencer/ai_influencer_api.json
+    version: 0
+    description: ''
+    inputs: []
+    outputs: []
+    skip_preprocess: true
 normal_workflows:
   - id: 58ou2hj6ul3
     name: vton.json
@@ -53,3 +61,7 @@ normal_workflows:
     name: upscaling.json
     file: ai_influencer/upscaling.json
     version: 2
+  - id: dl00hibiwr
+    name: ai_influencer.json
+    file: ai_influencer/ai_influencer.json
+    version: 0
