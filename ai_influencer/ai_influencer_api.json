@@ -29,9 +29,9 @@
     },
     "7": {
         "inputs": {
-            "text": "closeup photo of a man wearing a white suit in a garden\n\nhighly detailed, diffuse light, professional photography, 4k, smiling",
+            "text": "closeup IG photo of a man wearing a white suit in a garden\n\nhighly detailed, diffuse light, professional photography, 4k, smiling",
             "clip": [
-                "1",
+                "63",
                 1
             ]
         },
@@ -42,9 +42,9 @@
     },
     "8": {
         "inputs": {
-            "text": "blurry, horror, distorted, malformed, naked, hands, illustration",
+            "text": "blurry, horror, distorted, malformed, naked, hands, illustration, nsfw",
             "clip": [
-                "1",
+                "63",
                 1
             ]
         },
@@ -55,8 +55,8 @@
     },
     "10": {
         "inputs": {
-            "width": 512,
-            "height": 512,
+            "width": 1024,
+            "height": 1024,
             "batch_size": 1
         },
         "class_type": "EmptyLatentImage",
@@ -81,7 +81,7 @@
     },
     "53": {
         "inputs": {
-            "seed": 936805976898740,
+            "seed": 417878054999402,
             "steps": 35,
             "cfg": 6,
             "sampler_name": "ddpm",
@@ -185,7 +185,7 @@
             "end_at": 1,
             "weight_type": "standard",
             "model": [
-                "1",
+                "61",
                 0
             ],
             "ipadapter": [
@@ -193,7 +193,7 @@
                 1
             ],
             "image": [
-                "20",
+                "6",
                 0
             ]
         },
@@ -204,9 +204,9 @@
     },
     "61": {
         "inputs": {
-            "preset": "FULL FACE - SD1.5 only (portraits stronger)",
+            "preset": "PLUS FACE (portraits)",
             "model": [
-                "1",
+                "63",
                 0
             ]
         },
@@ -225,6 +225,25 @@
         "class_type": "PreviewImage",
         "_meta": {
             "title": "Preview Image"
+        }
+    },
+    "63": {
+        "inputs": {
+            "lora_name": "IGInfluencer_V1.safetensors",
+            "strength_model": 1,
+            "strength_clip": 1,
+            "model": [
+                "1",
+                0
+            ],
+            "clip": [
+                "1",
+                1
+            ]
+        },
+        "class_type": "LoraLoader",
+        "_meta": {
+            "title": "Load LoRA"
         }
     }
 }
