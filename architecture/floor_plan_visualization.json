@@ -54,7 +54,7 @@
                 "Node name for S&R": "KSampler"
             },
             "widgets_values": [
-                775912205896618,
+                448220093170924,
                 "randomize",
                 20,
                 8,
@@ -150,8 +150,8 @@
             "id": 17,
             "type": "ControlNetLoader",
             "pos": [
-                945.1383056640625,
-                957.6681518554688
+                878.94677734375,
+                982.1521606445312
             ],
             "size": [
                 315,
@@ -183,8 +183,8 @@
             "id": 19,
             "type": "ControlNetLoader",
             "pos": [
-                927.1168823242188,
-                1225.7420654296875
+                860.9253540039062,
+                1250.22607421875
             ],
             "size": [
                 315,
@@ -216,8 +216,8 @@
             "id": 16,
             "type": "Reroute",
             "pos": [
-                1050.8287353515625,
-                715.141357421875
+                984.63720703125,
+                739.6253662109375
             ],
             "size": [
                 75,
@@ -358,8 +358,8 @@
             "id": 21,
             "type": "DepthAnythingPreprocessor",
             "pos": [
-                948.3125610351562,
-                1091.5533447265625
+                882.1210327148438,
+                1116.037353515625
             ],
             "size": [
                 315,
@@ -398,40 +398,11 @@
             ]
         },
         {
-            "id": 22,
-            "type": "PreviewImage",
-            "pos": [
-                1827.974853515625,
-                1083.4217529296875
-            ],
-            "size": [
-                210,
-                246
-            ],
-            "flags": {},
-            "order": 16,
-            "mode": 0,
-            "inputs": [
-                {
-                    "name": "images",
-                    "type": "IMAGE",
-                    "link": 34
-                }
-            ],
-            "outputs": [],
-            "properties": {
-                "cnr_id": "comfy-core",
-                "ver": "0.3.15",
-                "Node name for S&R": "PreviewImage"
-            },
-            "widgets_values": []
-        },
-        {
             "id": 20,
             "type": "LineArtPreprocessor",
             "pos": [
-                926.0363159179688,
-                797.105224609375
+                859.8447875976562,
+                821.5892333984375
             ],
             "size": [
                 315,
@@ -470,40 +441,11 @@
             ]
         },
         {
-            "id": 23,
-            "type": "PreviewImage",
-            "pos": [
-                1805.0123291015625,
-                793.2666015625
-            ],
-            "size": [
-                210,
-                246
-            ],
-            "flags": {},
-            "order": 15,
-            "mode": 0,
-            "inputs": [
-                {
-                    "name": "images",
-                    "type": "IMAGE",
-                    "link": 35
-                }
-            ],
-            "outputs": [],
-            "properties": {
-                "cnr_id": "comfy-core",
-                "ver": "0.3.15",
-                "Node name for S&R": "PreviewImage"
-            },
-            "widgets_values": []
-        },
-        {
             "id": 18,
             "type": "ControlNetApplyAdvanced",
             "pos": [
-                1420.7607421875,
-                1056.61328125
+                1354.56884765625,
+                1081.0972900390625
             ],
             "size": [
                 315,
@@ -573,8 +515,8 @@
             "id": 15,
             "type": "ControlNetApplyAdvanced",
             "pos": [
-                1403.0823974609375,
-                796.1488647460938
+                1336.8905029296875,
+                820.6328735351562
             ],
             "size": [
                 315,
@@ -880,6 +822,46 @@
             ]
         },
         {
+            "id": 6,
+            "type": "CLIPTextEncode",
+            "pos": [
+                415,
+                186
+            ],
+            "size": [
+                422.84503173828125,
+                164.31304931640625
+            ],
+            "flags": {},
+            "order": 6,
+            "mode": 0,
+            "inputs": [
+                {
+                    "name": "clip",
+                    "type": "CLIP",
+                    "link": 3
+                }
+            ],
+            "outputs": [
+                {
+                    "name": "CONDITIONING",
+                    "type": "CONDITIONING",
+                    "links": [
+                        18
+                    ],
+                    "slot_index": 0
+                }
+            ],
+            "properties": {
+                "cnr_id": "comfy-core",
+                "ver": "0.3.15",
+                "Node name for S&R": "CLIPTextEncode"
+            },
+            "widgets_values": [
+                "minimalist living room"
+            ]
+        },
+        {
             "id": 24,
             "type": "LoadImage",
             "pos": [
@@ -919,44 +901,62 @@
             ]
         },
         {
-            "id": 6,
-            "type": "CLIPTextEncode",
+            "id": 22,
+            "type": "PreviewImage",
             "pos": [
-                415,
-                186
+                1757.7274169921875,
+                1180.4229736328125
             ],
             "size": [
-                422.84503173828125,
-                164.31304931640625
+                396.7015686035156,
+                303.59716796875
             ],
             "flags": {},
-            "order": 6,
+            "order": 16,
             "mode": 0,
             "inputs": [
                 {
-                    "name": "clip",
-                    "type": "CLIP",
-                    "link": 3
+                    "name": "images",
+                    "type": "IMAGE",
+                    "link": 34
                 }
             ],
-            "outputs": [
-                {
-                    "name": "CONDITIONING",
-                    "type": "CONDITIONING",
-                    "links": [
-                        18
-                    ],
-                    "slot_index": 0
-                }
-            ],
+            "outputs": [],
             "properties": {
                 "cnr_id": "comfy-core",
                 "ver": "0.3.15",
-                "Node name for S&R": "CLIPTextEncode"
+                "Node name for S&R": "PreviewImage"
             },
-            "widgets_values": [
-                "minimalist living room"
-            ]
+            "widgets_values": []
+        },
+        {
+            "id": 23,
+            "type": "PreviewImage",
+            "pos": [
+                1732.26806640625,
+                798.7261962890625
+            ],
+            "size": [
+                421.8751220703125,
+                328.7448425292969
+            ],
+            "flags": {},
+            "order": 15,
+            "mode": 0,
+            "inputs": [
+                {
+                    "name": "images",
+                    "type": "IMAGE",
+                    "link": 35
+                }
+            ],
+            "outputs": [],
+            "properties": {
+                "cnr_id": "comfy-core",
+                "ver": "0.3.15",
+                "Node name for S&R": "PreviewImage"
+            },
+            "widgets_values": []
         }
     ],
     "links": [
@@ -1214,10 +1214,10 @@
             "id": 1,
             "title": "Controlnets",
             "bounding": [
-                878.0933227539062,
-                657.0017700195312,
-                1247.2315673828125,
-                674.7237548828125
+                811.9017944335938,
+                681.4857788085938,
+                1367.952880859375,
+                864.1178588867188
             ],
             "color": "#3f789e",
             "font_size": 24,
@@ -1266,10 +1266,10 @@
     "config": {},
     "extra": {
         "ds": {
-            "scale": 0.28966437973668785,
+            "scale": 0.46650738020973354,
             "offset": [
-                771.830245431827,
-                1446.2210754992332
+                540.196990397163,
+                94.34939963086205
             ]
         }
     },
