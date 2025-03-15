@@ -1,0 +1,111 @@
+{
+    "10": {
+        "inputs": {
+            "mask_grow": 25,
+            "mixed_precision": "fp16",
+            "seed": 0,
+            "steps": 40,
+            "cfg": 2.5,
+            "image": [
+                "15",
+                0
+            ],
+            "mask": [
+                "11",
+                1
+            ],
+            "refer_image": [
+                "14",
+                0
+            ]
+        },
+        "class_type": "CatVTONWrapper",
+        "_meta": {
+            "title": "CatVTON Wrapper"
+        }
+    },
+    "11": {
+        "inputs": {
+            "prompt": "clothes",
+            "threshold": 0.3,
+            "sam_model": [
+                "12",
+                0
+            ],
+            "grounding_dino_model": [
+                "13",
+                0
+            ],
+            "image": [
+                "14",
+                0
+            ]
+        },
+        "class_type": "GroundingDinoSAMSegment (segment anything)",
+        "_meta": {
+            "title": "GroundingDinoSAMSegment (segment anything)"
+        }
+    },
+    "12": {
+        "inputs": {
+            "model_name": "sam_vit_h (2.56GB)"
+        },
+        "class_type": "SAMModelLoader (segment anything)",
+        "_meta": {
+            "title": "SAMModelLoader (segment anything)"
+        }
+    },
+    "13": {
+        "inputs": {
+            "model_name": "GroundingDINO_SwinT_OGC (694MB)"
+        },
+        "class_type": "GroundingDinoModelLoader (segment anything)",
+        "_meta": {
+            "title": "GroundingDinoModelLoader (segment anything)"
+        }
+    },
+    "14": {
+        "inputs": {
+            "image": "m-kast110md-majestic-man-original-imafw49uamqn455g-bb.webp",
+            "upload": "image"
+        },
+        "class_type": "LoadImage",
+        "_meta": {
+            "title": "Load Image"
+        }
+    },
+    "15": {
+        "inputs": {
+            "image": "image (99).png",
+            "upload": "image"
+        },
+        "class_type": "LoadImage",
+        "_meta": {
+            "title": "Load Image"
+        }
+    },
+    "16": {
+        "inputs": {
+            "images": [
+                "11",
+                0
+            ]
+        },
+        "class_type": "PreviewImage",
+        "_meta": {
+            "title": "Preview Image"
+        }
+    },
+    "17": {
+        "inputs": {
+            "images": [
+                "10",
+                0
+            ]
+        },
+        "class_type": "PreviewImage",
+        "_meta": {
+            "title": "Preview Image"
+        }
+    }
+}
