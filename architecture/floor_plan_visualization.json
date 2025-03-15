@@ -1,5 +1,5 @@
 {
-    "last_node_id": 31,
+    "last_node_id": 32,
     "last_link_id": 48,
     "nodes": [
         {
@@ -54,7 +54,7 @@
                 "Node name for S&R": "KSampler"
             },
             "widgets_values": [
-                699308268158088,
+                574501100813099,
                 "randomize",
                 20,
                 8,
@@ -75,7 +75,7 @@
                 98
             ],
             "flags": {},
-            "order": 5,
+            "order": 0,
             "mode": 0,
             "inputs": [],
             "outputs": [
@@ -127,7 +127,7 @@
                 106
             ],
             "flags": {},
-            "order": 13,
+            "order": 14,
             "mode": 0,
             "inputs": [
                 {
@@ -180,7 +180,7 @@
                 164.31304931640625
             ],
             "flags": {},
-            "order": 10,
+            "order": 7,
             "mode": 0,
             "inputs": [
                 {
@@ -220,7 +220,7 @@
                 180.6060791015625
             ],
             "flags": {},
-            "order": 11,
+            "order": 8,
             "mode": 0,
             "inputs": [
                 {
@@ -304,7 +304,7 @@
                 190
             ],
             "flags": {},
-            "order": 16,
+            "order": 13,
             "mode": 0,
             "inputs": [
                 {
@@ -341,10 +341,10 @@
                 }
             ],
             "properties": {
-                "cnr_id": "comfyui_ipadapter_plus",
+                "aux_id": "cubiq/ComfyUI_IPAdapter_plus",
                 "ver": "9d076a3df0d2763cef5510ec5ab807f6632c39f5",
                 "Node name for S&R": "IPAdapter",
-                "aux_id": "cubiq/ComfyUI_IPAdapter_plus"
+                "cnr_id": "comfyui_ipadapter_plus"
             },
             "widgets_values": [
                 0.4,
@@ -357,15 +357,15 @@
             "id": 12,
             "type": "IPAdapterUnifiedLoader",
             "pos": [
-                124.83141326904297,
-                1391.025634765625
+                127.11962127685547,
+                1184.7557373046875
             ],
             "size": [
                 267.8971862792969,
                 78.00625610351562
             ],
             "flags": {},
-            "order": 9,
+            "order": 6,
             "mode": 0,
             "inputs": [
                 {
@@ -399,13 +399,13 @@
                 }
             ],
             "properties": {
-                "cnr_id": "comfyui_ipadapter_plus",
+                "aux_id": "cubiq/ComfyUI_IPAdapter_plus",
                 "ver": "9d076a3df0d2763cef5510ec5ab807f6632c39f5",
                 "Node name for S&R": "IPAdapterUnifiedLoader",
-                "aux_id": "cubiq/ComfyUI_IPAdapter_plus"
+                "cnr_id": "comfyui_ipadapter_plus"
             },
             "widgets_values": [
-                "PLUS (high strength)"
+                "VIT-G (medium strength)"
             ]
         },
         {
@@ -420,7 +420,7 @@
                 314
             ],
             "flags": {},
-            "order": 0,
+            "order": 1,
             "mode": 0,
             "inputs": [],
             "outputs": [
@@ -462,7 +462,7 @@
                 66
             ],
             "flags": {},
-            "order": 6,
+            "order": 10,
             "mode": 0,
             "inputs": [
                 {
@@ -495,10 +495,10 @@
                 }
             ],
             "properties": {
-                "cnr_id": "comfyui_essentials",
+                "aux_id": "cubiq/ComfyUI_essentials",
                 "ver": "33ff89fd354d8ec3ab6affb605a79a931b445d99",
                 "Node name for S&R": "GetImageSize+",
-                "aux_id": "cubiq/ComfyUI_essentials"
+                "cnr_id": "comfyui_essentials"
             },
             "widgets_values": []
         },
@@ -514,7 +514,7 @@
                 186
             ],
             "flags": {},
-            "order": 17,
+            "order": 15,
             "mode": 0,
             "inputs": [
                 {
@@ -585,7 +585,7 @@
                 26
             ],
             "flags": {},
-            "order": 12,
+            "order": 9,
             "mode": 0,
             "inputs": [
                 {
@@ -623,7 +623,7 @@
                 58
             ],
             "flags": {},
-            "order": 1,
+            "order": 2,
             "mode": 0,
             "inputs": [],
             "outputs": [
@@ -712,7 +712,7 @@
                 "Node name for S&R": "ControlNetApplyAdvanced"
             },
             "widgets_values": [
-                1,
+                0.7000000000000001,
                 0,
                 1
             ]
@@ -729,7 +729,7 @@
                 58
             ],
             "flags": {},
-            "order": 2,
+            "order": 3,
             "mode": 0,
             "inputs": [],
             "outputs": [
@@ -762,7 +762,7 @@
                 82
             ],
             "flags": {},
-            "order": 7,
+            "order": 11,
             "mode": 0,
             "inputs": [
                 {
@@ -783,10 +783,10 @@
                 }
             ],
             "properties": {
-                "cnr_id": "comfyui_controlnet_aux",
+                "aux_id": "Fannovel16/comfyui_controlnet_aux",
                 "ver": "83463c2e4b04e729268e57f638b4212e0da4badc",
                 "Node name for S&R": "LineArtPreprocessor",
-                "aux_id": "Fannovel16/comfyui_controlnet_aux"
+                "cnr_id": "comfyui_controlnet_aux"
             },
             "widgets_values": [
                 "disable",
@@ -805,7 +805,7 @@
                 82
             ],
             "flags": {},
-            "order": 8,
+            "order": 12,
             "mode": 0,
             "inputs": [
                 {
@@ -826,10 +826,10 @@
                 }
             ],
             "properties": {
-                "cnr_id": "comfyui_controlnet_aux",
+                "aux_id": "Fannovel16/comfyui_controlnet_aux",
                 "ver": "83463c2e4b04e729268e57f638b4212e0da4badc",
                 "Node name for S&R": "DepthAnythingPreprocessor",
-                "aux_id": "Fannovel16/comfyui_controlnet_aux"
+                "cnr_id": "comfyui_controlnet_aux"
             },
             "widgets_values": [
                 "depth_anything_vitl14.pth",
@@ -848,7 +848,7 @@
                 303.59716796875
             ],
             "flags": {},
-            "order": 15,
+            "order": 17,
             "mode": 0,
             "inputs": [
                 {
@@ -877,7 +877,7 @@
                 328.7448425292969
             ],
             "flags": {},
-            "order": 14,
+            "order": 16,
             "mode": 0,
             "inputs": [
                 {
@@ -906,7 +906,7 @@
                 314
             ],
             "flags": {},
-            "order": 3,
+            "order": 5,
             "mode": 0,
             "inputs": [],
             "outputs": [
@@ -990,13 +990,14 @@
                 }
             ],
             "properties": {
-                "cnr_id": "comfyui_ultimatesdupscale",
+                "aux_id": "ssitu/ComfyUI_UltimateSDUpscale",
                 "ver": "778a475dde8116a2066fe07f6c9ca15554e0b5be",
-                "Node name for S&R": "UltimateSDUpscale"
+                "Node name for S&R": "UltimateSDUpscale",
+                "cnr_id": "comfyui_ultimatesdupscale"
             },
             "widgets_values": [
                 2,
-                200696790128786,
+                856235761704424,
                 "randomize",
                 20,
                 8,
@@ -1618,10 +1619,10 @@
     "config": {},
     "extra": {
         "ds": {
-            "scale": 0.26333125430607984,
+            "scale": 0.28966437973668785,
             "offset": [
-                1620.2560824888774,
-                970.659809595292
+                726.2548958257695,
+                -141.4038021272436
             ]
         }
     },
