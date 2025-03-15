@@ -20,6 +20,14 @@ workflows:
     inputs: []
     outputs: []
     skip_preprocess: true
+  - id: 013ihoefwflkk
+    name: floor_plan_visualization_api.json
+    file: architecture/floor_plan_visualization_api.json
+    version: 0
+    description: ''
+    inputs: []
+    outputs: []
+    skip_preprocess: true
 normal_workflows:
   - id: 58ou2hj6ul3
     name: vton.json
@@ -28,4 +36,8 @@ normal_workflows:
   - id: 9mof53hh8si
     name: ip_adapter.json
     file: ai_influencer/ip_adapter.json
+    version: 0
+  - id: 2mxj3vb82aw
+    name: floor_plan_visualization.json
+    file: architecture/floor_plan_visualization.json
     version: 0
