@@ -1,7 +1,7 @@
 {
     "3": {
         "inputs": {
-            "seed": 448220093170924,
+            "seed": 619574020973782,
             "steps": 20,
             "cfg": 8,
             "sampler_name": "euler",
@@ -97,19 +97,6 @@
             "title": "VAE Decode"
         }
     },
-    "9": {
-        "inputs": {
-            "filename_prefix": "ComfyUI",
-            "images": [
-                "8",
-                0
-            ]
-        },
-        "class_type": "SaveImage",
-        "_meta": {
-            "title": "Save Image"
-        }
-    },
     "10": {
         "inputs": {
             "weight": 0.4,
@@ -149,7 +136,7 @@
     },
     "13": {
         "inputs": {
-            "image": "50f668bd66cb86c9f8d52e21aee2c353_1.jpg",
+            "image": "50f668bd66cb86c9f8d52e21aee2c353_2.jpg",
             "upload": "image"
         },
         "class_type": "LoadImage",
@@ -303,12 +290,97 @@
     },
     "24": {
         "inputs": {
-            "image": "ComfyUI_00018_.png",
+            "image": "WhatsApp Image 2024-03-24 at 12.32.31.jpeg",
             "upload": "image"
         },
         "class_type": "LoadImage",
         "_meta": {
             "title": "Load Image"
+        }
+    },
+    "25": {
+        "inputs": {
+            "upscale_by": 2,
+            "seed": 87610009279612,
+            "steps": 20,
+            "cfg": 8,
+            "sampler_name": "euler",
+            "scheduler": "normal",
+            "denoise": 0.2,
+            "mode_type": "Linear",
+            "tile_width": 512,
+            "tile_height": 512,
+            "mask_blur": 8,
+            "tile_padding": 32,
+            "seam_fix_mode": "None",
+            "seam_fix_denoise": 1,
+            "seam_fix_width": 64,
+            "seam_fix_mask_blur": 8,
+            "seam_fix_padding": 16,
+            "force_uniform_tiles": true,
+            "tiled_decode": false,
+            "image": [
+                "8",
+                0
+            ],
+            "model": [
+                "10",
+                0
+            ],
+            "positive": [
+                "18",
+                0
+            ],
+            "negative": [
+                "18",
+                1
+            ],
+            "vae": [
+                "4",
+                2
+            ],
+            "upscale_model": [
+                "26",
+                0
+            ]
+        },
+        "class_type": "UltimateSDUpscale",
+        "_meta": {
+            "title": "Ultimate SD Upscale"
+        }
+    },
+    "26": {
+        "inputs": {
+            "model_name": "RealESRGAN_x4.pth"
+        },
+        "class_type": "UpscaleModelLoader",
+        "_meta": {
+            "title": "Load Upscale Model"
+        }
+    },
+    "30": {
+        "inputs": {
+            "images": [
+                "8",
+                0
+            ]
+        },
+        "class_type": "PreviewImage",
+        "_meta": {
+            "title": "Preview Image"
+        }
+    },
+    "31": {
+        "inputs": {
+            "filename_prefix": "ComfyUI",
+            "images": [
+                "25",
+                0
+            ]
+        },
+        "class_type": "SaveImage",
+        "_meta": {
+            "title": "Save Image"
         }
     }
 }
