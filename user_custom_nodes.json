@@ -62,5 +62,26 @@
     ],
     "apt": [],
     "cached": "False"
+  },
+  {
+    "name": "ComfyUI_CatVTON_Wrapper",
+    "url": "https://github.com/chflame163/ComfyUI_CatVTON_Wrapper",
+    "path": "custom_nodes",
+    "fetch_type": "git-clone",
+    "details": {
+      "author": "chflame163",
+      "title": "ComfyUI_CatVTON_Wrapper",
+      "id": "catvton-wrapper",
+      "reference": "https://github.com/chflame163/ComfyUI_CatVTON_Wrapper",
+      "files": [
+        "https://github.com/chflame163/ComfyUI_CatVTON_Wrapper"
+      ],
+      "install_type": "git-clone",
+      "description": "[a/CatVTON](https://github.com/Zheng-Chong/CatVTON) warpper for ComfyUI"
+    },
+    "nodes": [],
+    "pip": [],
+    "apt": [],
+    "cached": "False"
   }
 ]
