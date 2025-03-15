@@ -1,7 +1,7 @@
 {
     "3": {
         "inputs": {
-            "seed": 156680208700286,
+            "seed": 296635319547170,
             "steps": 20,
             "cfg": 8,
             "sampler_name": "euler",
@@ -115,7 +115,7 @@
             "weight": 1,
             "start_at": 0,
             "end_at": 1,
-            "weight_type": "standard",
+            "weight_type": "style transfer",
             "model": [
                 "12",
                 0
@@ -125,7 +125,7 @@
                 1
             ],
             "image": [
-                "13",
+                "24",
                 0
             ]
         },
@@ -149,7 +149,7 @@
     },
     "13": {
         "inputs": {
-            "image": "example.png",
+            "image": "50f668bd66cb86c9f8d52e21aee2c353_1.jpg",
             "upload": "image"
         },
         "class_type": "LoadImage",
@@ -299,6 +299,16 @@
         "class_type": "PreviewImage",
         "_meta": {
             "title": "Preview Image"
+        }
+    },
+    "24": {
+        "inputs": {
+            "image": "magggumpi_A_large_weathered_stone_arch_frames_the_entrance_to_a_bedbc2ad-db14-4540-b248-03f1322084a2.png",
+            "upload": "image"
+        },
+        "class_type": "LoadImage",
+        "_meta": {
+            "title": "Load Image"
         }
     }
 }
