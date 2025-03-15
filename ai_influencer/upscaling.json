@@ -54,7 +54,7 @@
                 "Node name for S&R": "KSampler"
             },
             "widgets_values": [
-                156680208700286,
+                1082229674441929,
                 "randomize",
                 20,
                 8,
@@ -75,7 +75,7 @@
                 98
             ],
             "flags": {},
-            "order": 1,
+            "order": 2,
             "mode": 0,
             "inputs": [],
             "outputs": [
@@ -113,7 +113,7 @@
                 "Node name for S&R": "CheckpointLoaderSimple"
             },
             "widgets_values": [
-                "v1-5-pruned-emaonly-fp16.safetensors"
+                "epicrealism_naturalSinRC1VAE.safetensors"
             ]
         },
         {
@@ -371,7 +371,7 @@
             },
             "widgets_values": [
                 2,
-                0,
+                391903220613834,
                 "randomize",
                 20,
                 8,
@@ -404,7 +404,7 @@
                 58
             ],
             "flags": {},
-            "order": 2,
+            "order": 1,
             "mode": 0,
             "inputs": [],
             "outputs": [
@@ -451,7 +451,8 @@
                 "cnr_id": "comfy-core",
                 "ver": "0.3.15",
                 "Node name for S&R": "PreviewImage"
-            }
+            },
+            "widgets_values": []
         }
     ],
     "links": [
@@ -588,11 +589,11 @@
     "config": {},
     "extra": {
         "ds": {
-            "scale": 0.7513148009015777,
-            "offset": {
-                "0": -956.5907592773438,
-                "1": -182.9782257080078
-            }
+            "scale": 1.1,
+            "offset": [
+                148.9227398252653,
+                -293.16272834871717
+            ]
         }
     },
     "version": 0.4
