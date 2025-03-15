@@ -1,6 +1,6 @@
 {
     "last_node_id": 31,
-    "last_link_id": 44,
+    "last_link_id": 46,
     "nodes": [
         {
             "id": 3,
@@ -54,7 +54,7 @@
                 "Node name for S&R": "KSampler"
             },
             "widgets_values": [
-                156680208700286,
+                198126302865885,
                 "randomize",
                 20,
                 8,
@@ -75,7 +75,7 @@
                 98
             ],
             "flags": {},
-            "order": 4,
+            "order": 0,
             "mode": 0,
             "inputs": [],
             "outputs": [
@@ -127,7 +127,7 @@
                 106
             ],
             "flags": {},
-            "order": 15,
+            "order": 16,
             "mode": 0,
             "inputs": [
                 {
@@ -180,7 +180,7 @@
                 164.31304931640625
             ],
             "flags": {},
-            "order": 10,
+            "order": 7,
             "mode": 0,
             "inputs": [
                 {
@@ -205,7 +205,7 @@
                 "Node name for S&R": "CLIPTextEncode"
             },
             "widgets_values": [
-                "beautiful scenery nature glass bottle landscape, , purple galaxy bottle,"
+                "a minimalist living room"
             ]
         },
         {
@@ -220,7 +220,7 @@
                 180.6060791015625
             ],
             "flags": {},
-            "order": 11,
+            "order": 8,
             "mode": 0,
             "inputs": [
                 {
@@ -334,7 +334,7 @@
                 314
             ],
             "flags": {},
-            "order": 0,
+            "order": 5,
             "mode": 0,
             "inputs": [],
             "outputs": [
@@ -342,7 +342,9 @@
                     "name": "IMAGE",
                     "type": "IMAGE",
                     "links": [
-                        10
+                        10,
+                        45,
+                        46
                     ],
                     "slot_index": 0
                 },
@@ -358,7 +360,7 @@
                 "Node name for S&R": "LoadImage"
             },
             "widgets_values": [
-                "example.png",
+                "50f668bd66cb86c9f8d52e21aee2c353_2.jpg",
                 "image"
             ]
         },
@@ -374,7 +376,7 @@
                 66
             ],
             "flags": {},
-            "order": 8,
+            "order": 10,
             "mode": 0,
             "inputs": [
                 {
@@ -424,7 +426,7 @@
                 190
             ],
             "flags": {},
-            "order": 16,
+            "order": 13,
             "mode": 0,
             "inputs": [
                 {
@@ -466,7 +468,7 @@
                 "Node name for S&R": "IPAdapter"
             },
             "widgets_values": [
-                1,
+                0.4,
                 0,
                 1,
                 "style transfer"
@@ -484,7 +486,7 @@
                 78
             ],
             "flags": {},
-            "order": 9,
+            "order": 6,
             "mode": 0,
             "inputs": [
                 {
@@ -538,7 +540,7 @@
                 314
             ],
             "flags": {},
-            "order": 1,
+            "order": 2,
             "mode": 0,
             "inputs": [],
             "outputs": [
@@ -562,7 +564,7 @@
                 "Node name for S&R": "LoadImage"
             },
             "widgets_values": [
-                "example.png",
+                "filename_prefix_81175_GN29IK1K7U.png",
                 "image"
             ]
         },
@@ -649,13 +651,13 @@
                 82
             ],
             "flags": {},
-            "order": 5,
+            "order": 11,
             "mode": 0,
             "inputs": [
                 {
                     "name": "image",
                     "type": "IMAGE",
-                    "link": null
+                    "link": 45
                 }
             ],
             "outputs": [
@@ -764,13 +766,13 @@
                 82
             ],
             "flags": {},
-            "order": 6,
+            "order": 12,
             "mode": 0,
             "inputs": [
                 {
                     "name": "image",
                     "type": "IMAGE",
-                    "link": null
+                    "link": 46
                 }
             ],
             "outputs": [
@@ -839,7 +841,7 @@
                 58.6109619140625
             ],
             "flags": {},
-            "order": 2,
+            "order": 4,
             "mode": 0,
             "inputs": [],
             "outputs": [
@@ -872,7 +874,7 @@
                 26
             ],
             "flags": {},
-            "order": 17,
+            "order": 14,
             "mode": 0,
             "inputs": [
                 {
@@ -908,7 +910,7 @@
                 26
             ],
             "flags": {},
-            "order": 18,
+            "order": 15,
             "mode": 0,
             "inputs": [
                 {
@@ -944,7 +946,7 @@
                 26
             ],
             "flags": {},
-            "order": 12,
+            "order": 9,
             "mode": 0,
             "inputs": [
                 {
@@ -982,7 +984,7 @@
                 280.60028076171875
             ],
             "flags": {},
-            "order": 13,
+            "order": 17,
             "mode": 0,
             "inputs": [
                 {
@@ -1010,7 +1012,7 @@
                 271.73907470703125
             ],
             "flags": {},
-            "order": 14,
+            "order": 18,
             "mode": 0,
             "inputs": [
                 {
@@ -1089,7 +1091,7 @@
             },
             "widgets_values": [
                 2,
-                0,
+                982568543829115,
                 "randomize",
                 20,
                 8,
@@ -1188,7 +1190,7 @@
                 58
             ],
             "flags": {},
-            "order": 7,
+            "order": 1,
             "mode": 0,
             "inputs": [],
             "outputs": [
@@ -1522,6 +1524,22 @@
             28,
             5,
             "UPSCALE_MODEL"
+        ],
+        [
+            45,
+            10,
+            0,
+            16,
+            0,
+            "IMAGE"
+        ],
+        [
+            46,
+            10,
+            0,
+            18,
+            0,
+            "IMAGE"
         ]
     ],
     "groups": [
@@ -1594,10 +1612,10 @@
     "config": {},
     "extra": {
         "ds": {
-            "scale": 0.7513148009015782,
+            "scale": 1,
             "offset": [
-                -265.61152004863277,
-                -465.485147716277
+                -24.264544451117217,
+                -682.6667044750293
             ]
         }
     },
