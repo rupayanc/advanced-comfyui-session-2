@@ -1,7 +1,7 @@
 {
     "3": {
         "inputs": {
-            "seed": 296635319547170,
+            "seed": 775912205896618,
             "steps": 20,
             "cfg": 8,
             "sampler_name": "euler",
@@ -57,7 +57,7 @@
     },
     "6": {
         "inputs": {
-            "text": "beautiful scenery nature glass bottle landscape, , purple galaxy bottle,",
+            "text": "minimalist living room",
             "clip": [
                 "4",
                 1
@@ -303,7 +303,7 @@
     },
     "24": {
         "inputs": {
-            "image": "magggumpi_A_large_weathered_stone_arch_frames_the_entrance_to_a_bedbc2ad-db14-4540-b248-03f1322084a2.png",
+            "image": "ComfyUI_00018_.png",
             "upload": "image"
         },
         "class_type": "LoadImage",
