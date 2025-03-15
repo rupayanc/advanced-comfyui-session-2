@@ -47,7 +47,7 @@ workflows:
   - id: h9wg0bvos6
     name: architecture_visualsation_api.json
     file: architecture/architecture_visualsation_api.json
-    version: 0
+    version: 1
     description: ''
     inputs: []
     outputs: []
@@ -76,4 +76,4 @@ normal_workflows:
   - id: sd90h8jna2d
     name: architecture_visualsation.json
     file: architecture/architecture_visualsation.json
-    version: 0
+    version: 1
