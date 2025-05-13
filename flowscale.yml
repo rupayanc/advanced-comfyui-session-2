@@ -52,6 +52,30 @@ workflows:
     inputs: []
     outputs: []
     skip_preprocess: true
+  - id: 1ia4tpm2h6r
+    name: ai_influencer.json
+    description: ''
+    file: ai_influencer/ai_influencer.json
+  - id: p6ndzatkgpn
+    name: ip_adapter.json
+    description: ''
+    file: ai_influencer/ip_adapter.json
+  - id: y5zck3moml
+    name: upscaling.json
+    description: ''
+    file: ai_influencer/upscaling.json
+  - id: hho8nqo9xcc
+    name: vton.json
+    description: ''
+    file: ai_influencer/vton.json
+  - id: 5n67ih42aes
+    name: architecture_visualsation.json
+    description: ''
+    file: architecture/architecture_visualsation.json
+  - id: lefpbtc1cxt
+    name: floor_plan_visualization.json
+    description: ''
+    file: architecture/floor_plan_visualization.json
 normal_workflows:
   - id: 58ou2hj6ul3
     name: vton.json
