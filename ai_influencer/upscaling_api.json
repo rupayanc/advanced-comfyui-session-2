@@ -1,7 +1,7 @@
 {
     "3": {
         "inputs": {
-            "seed": 319459578321395,
+            "seed": 1080348572655892,
             "steps": 20,
             "cfg": 8,
             "sampler_name": "euler",
@@ -20,7 +20,7 @@
                 0
             ],
             "latent_image": [
-                "5",
+                "14",
                 0
             ]
         },
@@ -38,20 +38,9 @@
             "title": "Load Checkpoint"
         }
     },
-    "5": {
-        "inputs": {
-            "width": 512,
-            "height": 512,
-            "batch_size": 1
-        },
-        "class_type": "EmptyLatentImage",
-        "_meta": {
-            "title": "Empty Latent Image"
-        }
-    },
     "6": {
         "inputs": {
-            "text": "a man dancing on a street",
+            "text": "a girl dancing",
             "clip": [
                 "4",
                 1
@@ -107,7 +96,7 @@
     "10": {
         "inputs": {
             "upscale_by": 4,
-            "seed": 1046038136567559,
+            "seed": 250491729925325,
             "steps": 20,
             "cfg": 8,
             "sampler_name": "euler",
@@ -164,16 +153,29 @@
             "title": "Load Upscale Model"
         }
     },
-    "12": {
+    "13": {
         "inputs": {
-            "images": [
-                "8",
+            "image": "example.png"
+        },
+        "class_type": "LoadImage",
+        "_meta": {
+            "title": "Load Image"
+        }
+    },
+    "14": {
+        "inputs": {
+            "pixels": [
+                "13",
                 0
+            ],
+            "vae": [
+                "4",
+                2
             ]
         },
-        "class_type": "PreviewImage",
+        "class_type": "VAEEncode",
         "_meta": {
-            "title": "Preview Image"
+            "title": "VAE Encode"
         }
     }
 }
