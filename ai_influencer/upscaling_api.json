@@ -172,7 +172,7 @@
     "16": {
         "inputs": {
             "filename_prefix": "FlowScale",
-            "format": "avif",
+            "format": "webp",
             "label": "Output Image",
             "quality": 95,
             "lossless": false,
