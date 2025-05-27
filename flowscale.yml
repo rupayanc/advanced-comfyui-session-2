@@ -31,7 +31,7 @@ workflows:
   - id: 4wxcnu0tam5
     name: upscaling_api.json
     file: ai_influencer/upscaling_api.json
-    version: 6
+    version: 7
     description: ''
     inputs: []
     outputs: []
@@ -93,7 +93,7 @@ normal_workflows:
   - id: 4wxcnu0tam5
     name: upscaling.json
     file: ai_influencer/upscaling.json
-    version: 6
+    version: 7
   - id: dl00hibiwr
     name: ai_influencer.json
     file: ai_influencer/ai_influencer.json
