@@ -309,9 +309,10 @@
                 }
             ],
             "properties": {
-                "aux_id": "ssitu/ComfyUI_UltimateSDUpscale",
+                "cnr_id": "comfyui_ultimatesdupscale",
                 "ver": "778a475dde8116a2066fe07f6c9ca15554e0b5be",
-                "Node name for S&R": "UltimateSDUpscale"
+                "Node name for S&R": "UltimateSDUpscale",
+                "aux_id": "ssitu/ComfyUI_UltimateSDUpscale"
             },
             "widgets_values": [
                 4,
@@ -481,7 +482,7 @@
             },
             "widgets_values": [
                 "FlowScale",
-                "avif",
+                "webp",
                 "Output Image",
                 95,
                 false
@@ -672,10 +673,10 @@
     "config": {},
     "extra": {
         "ds": {
-            "scale": 0.6830134553650711,
+            "scale": 0.9090909090909098,
             "offset": [
-                232.52758534018753,
-                141.283256687868
+                -1245.7162146598114,
+                180.9712566878678
             ]
         },
         "frontendVersion": "1.20.1"
