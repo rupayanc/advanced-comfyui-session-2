@@ -1,4 +1,4 @@
-version: 2
+version: 3
 models: models.json
 custom_nodes: custom_nodes.json
 user_models: user_models.json
@@ -65,9 +65,26 @@ workflows:
     file: ai_influencer/ai_influencer_api.json
     version: 4
     description: ''
-    inputs: []
-    outputs: []
+    inputs:
+      - path: 7.inputs.text
+        label: prompt
+        parameter_name: text_88258
+        type: string
+        demo_type: text
+        category: input
+        randomize: false
+      - path: 58.inputs.filename_prefix
+        label: filename_prefix
+        parameter_name: filename_prefix_14187
+        type: string
+        demo_type: text
+        category: output
+        randomize: true
+    outputs:
+      - label: ''
+        demo_type: image
     skip_preprocess: true
+    advancedConfig: true
   - id: sd90h8jna2d
     name: architecture_visualsation_api.json
     file: architecture/architecture_visualsation_api.json
