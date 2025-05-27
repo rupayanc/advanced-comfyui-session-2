@@ -1,7 +1,7 @@
 {
     "3": {
         "inputs": {
-            "seed": 749707199207940,
+            "seed": 38167188697147,
             "steps": 20,
             "cfg": 8,
             "sampler_name": "euler",
@@ -86,7 +86,7 @@
     "10": {
         "inputs": {
             "upscale_by": 4,
-            "seed": 1062276694063392,
+            "seed": 399743304446258,
             "steps": 20,
             "cfg": 8,
             "sampler_name": "euler",
@@ -188,7 +188,7 @@
     },
     "17": {
         "inputs": {
-            "default_value": "a girl dancing",
+            "default_value": "a boy dancing",
             "label": "prompt"
         },
         "class_type": "FSLoadText",
