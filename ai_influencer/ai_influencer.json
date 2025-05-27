@@ -1,4 +1,6 @@
 {
+    "id": "ae860090-3889-4370-a82a-05f5732db2a2",
+    "revision": 0,
     "last_node_id": 65,
     "last_link_id": 148,
     "nodes": [
@@ -21,25 +23,22 @@
                 {
                     "name": "MODEL",
                     "type": "MODEL",
-                    "shape": 3,
+                    "slot_index": 0,
                     "links": [
                         141
-                    ],
-                    "slot_index": 0
+                    ]
                 },
                 {
                     "name": "CLIP",
                     "type": "CLIP",
-                    "shape": 3,
+                    "slot_index": 1,
                     "links": [
                         142
-                    ],
-                    "slot_index": 1
+                    ]
                 },
                 {
                     "name": "VAE",
                     "type": "VAE",
-                    "shape": 3,
                     "links": null
                 }
             ],
@@ -71,11 +70,10 @@
                 {
                     "name": "VAE",
                     "type": "VAE",
-                    "shape": 3,
+                    "slot_index": 0,
                     "links": [
                         121
-                    ],
-                    "slot_index": 0
+                    ]
                 }
             ],
             "properties": {
@@ -106,17 +104,15 @@
                 {
                     "name": "IMAGE",
                     "type": "IMAGE",
-                    "shape": 3,
+                    "slot_index": 0,
                     "links": [
                         77,
                         125
-                    ],
-                    "slot_index": 0
+                    ]
                 },
                 {
                     "name": "MASK",
                     "type": "MASK",
-                    "shape": 3,
                     "links": null
                 }
             ],
@@ -155,11 +151,10 @@
                 {
                     "name": "CONDITIONING",
                     "type": "CONDITIONING",
-                    "shape": 3,
+                    "slot_index": 0,
                     "links": [
                         116
-                    ],
-                    "slot_index": 0
+                    ]
                 }
             ],
             "properties": {
@@ -168,7 +163,7 @@
                 "Node name for S&R": "CLIPTextEncode"
             },
             "widgets_values": [
-                "closeup IG photo of a man wearing a white suit in a garden\n\nhighly detailed, diffuse light, professional photography, 4k, smiling"
+                "closeup IG photo of a man wearing a white suit in a garden\n\nhighly detailed, diffuse light, professional photography, 4k, smiling 1"
             ],
             "color": "#232",
             "bgcolor": "#353"
@@ -198,11 +193,10 @@
                 {
                     "name": "CONDITIONING",
                     "type": "CONDITIONING",
-                    "shape": 3,
+                    "slot_index": 0,
                     "links": [
                         117
-                    ],
-                    "slot_index": 0
+                    ]
                 }
             ],
             "properties": {
@@ -235,11 +229,10 @@
                 {
                     "name": "LATENT",
                     "type": "LATENT",
-                    "shape": 3,
+                    "slot_index": 0,
                     "links": [
                         118
-                    ],
-                    "slot_index": 0
+                    ]
                 }
             ],
             "properties": {
@@ -278,19 +271,18 @@
                 {
                     "name": "IMAGE",
                     "type": "IMAGE",
-                    "shape": 3,
+                    "slot_index": 0,
                     "links": [
                         135,
                         148
-                    ],
-                    "slot_index": 0
+                    ]
                 }
             ],
             "properties": {
-                "aux_id": "cubiq/ComfyUI_IPAdapter_plus",
+                "cnr_id": "comfyui_ipadapter_plus",
                 "ver": "9d076a3df0d2763cef5510ec5ab807f6632c39f5",
                 "Node name for S&R": "PrepImageForClipVision",
-                "cnr_id": "comfyui_ipadapter_plus"
+                "aux_id": "cubiq/ComfyUI_IPAdapter_plus"
             },
             "widgets_values": [
                 "LANCZOS",
@@ -338,11 +330,10 @@
                 {
                     "name": "LATENT",
                     "type": "LATENT",
-                    "shape": 3,
+                    "slot_index": 0,
                     "links": [
                         123
-                    ],
-                    "slot_index": 0
+                    ]
                 }
             ],
             "properties": {
@@ -390,12 +381,11 @@
                 {
                     "name": "IMAGE",
                     "type": "IMAGE",
-                    "shape": 3,
+                    "slot_index": 0,
                     "links": [
                         122,
                         124
-                    ],
-                    "slot_index": 0
+                    ]
                 }
             ],
             "properties": {
@@ -457,45 +447,48 @@
                 },
                 {
                     "name": "source_image",
-                    "type": "IMAGE",
                     "shape": 7,
+                    "type": "IMAGE",
                     "link": 125
                 },
                 {
                     "name": "face_model",
-                    "type": "FACE_MODEL",
                     "shape": 7,
+                    "type": "FACE_MODEL",
                     "link": null
                 },
                 {
                     "name": "face_boost",
-                    "type": "FACE_BOOST",
                     "shape": 7,
+                    "type": "FACE_BOOST",
                     "link": null
                 }
             ],
             "outputs": [
                 {
-                    "name": "IMAGE",
+                    "name": "SWAPPED_IMAGE",
                     "type": "IMAGE",
-                    "shape": 3,
+                    "slot_index": 0,
                     "links": [
                         127
-                    ],
-                    "slot_index": 0
+                    ]
                 },
                 {
                     "name": "FACE_MODEL",
                     "type": "FACE_MODEL",
-                    "shape": 3,
+                    "links": null
+                },
+                {
+                    "name": "ORIGINAL_IMAGE",
+                    "type": "IMAGE",
                     "links": null
                 }
             ],
             "properties": {
-                "aux_id": "Gourieff/ComfyUI-ReActor",
+                "cnr_id": "comfyui-reactor",
                 "ver": "d901609a1d5d1942a6b069b2f8f3778fee3a7134",
                 "Node name for S&R": "ReActorFaceSwap",
-                "cnr_id": "comfyui-reactor"
+                "aux_id": "Gourieff/ComfyUI-ReActor"
             },
             "widgets_values": [
                 true,
@@ -573,8 +566,8 @@
                 },
                 {
                     "name": "attn_mask",
-                    "type": "MASK",
                     "shape": 7,
+                    "type": "MASK",
                     "link": null
                 }
             ],
@@ -582,17 +575,17 @@
                 {
                     "name": "MODEL",
                     "type": "MODEL",
+                    "slot_index": 0,
                     "links": [
                         134
-                    ],
-                    "slot_index": 0
+                    ]
                 }
             ],
             "properties": {
-                "aux_id": "cubiq/ComfyUI_IPAdapter_plus",
+                "cnr_id": "comfyui_ipadapter_plus",
                 "ver": "9d076a3df0d2763cef5510ec5ab807f6632c39f5",
                 "Node name for S&R": "IPAdapter",
-                "cnr_id": "comfyui_ipadapter_plus"
+                "aux_id": "cubiq/ComfyUI_IPAdapter_plus"
             },
             "widgets_values": [
                 1,
@@ -623,8 +616,8 @@
                 },
                 {
                     "name": "ipadapter",
-                    "type": "IPADAPTER",
                     "shape": 7,
+                    "type": "IPADAPTER",
                     "link": null
                 }
             ],
@@ -632,10 +625,10 @@
                 {
                     "name": "model",
                     "type": "MODEL",
+                    "slot_index": 0,
                     "links": [
                         146
-                    ],
-                    "slot_index": 0
+                    ]
                 },
                 {
                     "name": "ipadapter",
@@ -646,10 +639,10 @@
                 }
             ],
             "properties": {
-                "aux_id": "cubiq/ComfyUI_IPAdapter_plus",
+                "cnr_id": "comfyui_ipadapter_plus",
                 "ver": "9d076a3df0d2763cef5510ec5ab807f6632c39f5",
                 "Node name for S&R": "IPAdapterUnifiedLoader",
-                "cnr_id": "comfyui_ipadapter_plus"
+                "aux_id": "cubiq/ComfyUI_IPAdapter_plus"
             },
             "widgets_values": [
                 "PLUS FACE (portraits)"
@@ -714,19 +707,19 @@
                 {
                     "name": "MODEL",
                     "type": "MODEL",
+                    "slot_index": 0,
                     "links": [
                         145
-                    ],
-                    "slot_index": 0
+                    ]
                 },
                 {
                     "name": "CLIP",
                     "type": "CLIP",
+                    "slot_index": 1,
                     "links": [
                         143,
                         144
-                    ],
-                    "slot_index": 1
+                    ]
                 }
             ],
             "properties": {
@@ -820,14 +813,6 @@
             0,
             58,
             0,
-            "IMAGE"
-        ],
-        [
-            130,
-            38,
-            0,
-            60,
-            2,
             "IMAGE"
         ],
         [
@@ -968,12 +953,13 @@
     "config": {},
     "extra": {
         "ds": {
-            "scale": 0.5644739300537774,
+            "scale": 0.7513148009015781,
             "offset": [
-                921.1979060587764,
-                -106.85157321980097
+                673.8166730587761,
+                -463.0066032198013
             ]
-        }
+        },
+        "frontendVersion": "1.20.1"
     },
     "version": 0.4
 }
