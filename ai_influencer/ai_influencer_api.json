@@ -19,8 +19,7 @@
     },
     "6": {
         "inputs": {
-            "image": "IMG_20210110_114118.jpg",
-            "upload": "image"
+            "image": "IMG_20210110_114118.jpg"
         },
         "class_type": "LoadImage",
         "_meta": {
@@ -29,7 +28,7 @@
     },
     "7": {
         "inputs": {
-            "text": "closeup IG photo of a man wearing a white suit in a garden\n\nhighly detailed, diffuse light, professional photography, 4k, smiling",
+            "text": "closeup IG photo of a man wearing a white suit in a garden\n\nhighly detailed, diffuse light, professional photography, 4k, smiling 1",
             "clip": [
                 "63",
                 1
